@@ -1,0 +1,68 @@
+Build Configuration:
+WRLINUX_VERSION      = "10.21.29a.0"
+WRLINUX_BRANCH       = "development"
+BB_VERSION           = "1.51.0"
+BUILD_SYS            = "x86_64-linux"
+DISTRO               = "wrlinux"
+DISTRO_VERSION       = "10.21.29a.0"
+MACHINE              = "intel-x86-64"
+DEFAULTTUNE          = "corei7-64"
+TARGET_SYS           = "x86_64-wrs-linux"
+TUNE_FEATURES        = "m64 corei7"
+TARGET_FPU           = ""
+lib32:  TARGET_SYS        = "x86_64-wrsmllib32-linux"
+lib32:  TUNE_FEATURES     = "m32 corei7"
+wrlinux              
+wrlinux-distro       = "vWRLINUX_CI_10.21.29a.0-1-gf438feb8:f438feb8579ed3c8ad298d2546ee732a882dffb7"
+intel-x86            = "vWRLINUX_CI_10.21.29a.0:1877c1348ba2e3ebc13861d4e861a009f160623b"
+meta                 = "vWRLINUX_CI_10.21.29a.0-2-gf01238aacf:f01238aacfcf4fffe013ace93a4067a8041b4d36"
+wr-template          = "vWRLINUX_CI_10.21.29a.0:39a8e67f06b1723c1bae199bce4205a20f268da3"
+meta-python2         = "vWRLINUX_CI_10.21.29a.0:eff5a111b04b557a126943d78872963c55bde10d"
+meta-filesystems     
+meta-gnome           
+meta-initramfs       
+meta-python          
+meta-multimedia      
+meta-networking      
+meta-oe              
+meta-perl            = "vWRLINUX_CI_10.21.29a.0:bfeaf08643ba33d569e121241054615e8392731a"
+meta-realtime        = "vWRLINUX_CI_10.21.29a.0:269ffabba382df052a0650b9be92fffe8d5d8be5"
+meta-virtualization  = "vWRLINUX_CI_10.21.29a.0:c8324243bba0fcc9aa4a3153ace0a100b9c43777"
+meta-webserver       
+meta-xfce            = "vWRLINUX_CI_10.21.29a.0:bfeaf08643ba33d569e121241054615e8392731a"
+meta-intel           = "vWRLINUX_CI_10.21.29a.0:f3abdde915d1731e843856ed160c8a524ab78b10"
+meta-intel-qat       = "vWRLINUX_CI_10.21.29a.0:9db64151f1ba8380bc6d8ed25a7a19e11500f441"
+meta-dpdk            = "vWRLINUX_CI_10.21.29a.0:de9d7bbdaf02585d06be651bba7e3045802c179c"
+meta-anaconda        = "vWRLINUX_CI_10.21.29a.0:76d73debdb5bdbb0f1667cfcbf90cf308d2bdf1c"
+wrlinux-dl           = "vWRLINUX_CI_10.21.29a.0:dd4920806f64102a9f1f8bd6a8141bf38ca49499"
+meta-clang           = "vWRLINUX_CI_10.21.29a.0:a8f026324c20a00f82c584f771c115f80e3a8a98"
+meta-efi-secure-boot 
+meta-encrypted-storage 
+meta-ids             
+meta-integrity       
+meta                 = "vWRLINUX_CI_10.21.29a.0:8f94ab95dffe746ec165a6d398707446023c8b75"
+meta-security        = "vWRLINUX_CI_10.21.29a.0:a443c7dce7c7ad2e8b451661038cf723b7c1536d"
+meta-selinux         = "vWRLINUX_CI_10.21.29a.0:fef25e0b0281663276ed49aedffdcebc72b9c050"
+meta-signing-key     
+meta-tpm             
+meta-tpm2            = "vWRLINUX_CI_10.21.29a.0:8f94ab95dffe746ec165a6d398707446023c8b75"
+oe-core-dl-3.2       = "vWRLINUX_CI_10.21.29a.0:7f2c704ef82d5275608d4993862dad3d284ef632"
+meta-python2-dl-3.2  = "vWRLINUX_CI_10.21.29a.0:a604509b7c1958defdd3480aa2feba493b1d01f4"
+meta-openembedded-dl-3.2 = "vWRLINUX_CI_10.21.29a.0:ae08564dd5f40a57f51f339aee86f73ce01d7cc9"
+meta-realtime-dl-3.2 = "vWRLINUX_CI_10.21.29a.0:f3ae1b0123282810a25274e6625050696a8177e9"
+meta-virtualization-dl-3.2 = "vWRLINUX_CI_10.21.29a.0:d6e1d0b19828243a7c72e6c1de0e8479795cee72"
+meta-intel-dl        = "vWRLINUX_CI_10.21.29a.0:f5fda1fcfc55a1a74855aac2982e5db72a2d70ba"
+meta-intel-qat-dl    = "vWRLINUX_CI_10.21.29a.0:8b51ffada67aa216e57cc19e93504f96585d971c"
+meta-dpdk-dl         = "vWRLINUX_CI_10.21.29a.0:2ab0288c97febb0479da44d3a6df87afa092aabb"
+meta-anaconda-dl     = "vWRLINUX_CI_10.21.29a.0:7561d9cdd8a3aa20f26fc4682302a2c1da3feabe"
+meta-clang-dl        = "vWRLINUX_CI_10.21.29a.0:84dbebd2980bdba2dbdadeb6542a84a03dbf36da"
+meta-efi-secure-boot-dl = "vWRLINUX_CI_10.21.29a.0:cd095d67bd63b7ea25ecb4b964396a6fcf1e461e"
+meta-encrypted-storage-dl = "vWRLINUX_CI_10.21.29a.0:8d868c6ed0701e670f798edb3fe8b1d1ee33a9e6"
+meta-ids-dl          = "vWRLINUX_CI_10.21.29a.0:b63447330e4c6531f589f243ee15cadd312e60a1"
+meta-integrity-dl    = "vWRLINUX_CI_10.21.29a.0:a84cb2cd85a60700d0a15a8c754de3709f5143aa"
+meta-security-dl     = "vWRLINUX_CI_10.21.29a.0:efc52f1e645e800b52deb1f94716bcde9d99554b"
+meta-selinux-dl      = "vWRLINUX_CI_10.21.29a.0:316c1c5bfc8145a3cd214eea306ecccd714e51bd"
+meta-signing-key-dl  = "vWRLINUX_CI_10.21.29a.0:df727818f053d07461048171843351d292e6e406"
+meta-tpm-dl          = "vWRLINUX_CI_10.21.29a.0:0add06ffc5f493245e6acd2a1badc293384cb699"
+meta-tpm2-dl         = "vWRLINUX_CI_10.21.29a.0:17400c3fc822ee2e8c8063acf2a22c3f5cc3254c"
+local                = "master:b0fc46977affae38617a917bf61ccdd14db652a1"
